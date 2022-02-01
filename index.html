@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="info">
+        <p>info@emailadress.com &nbsp;&nbsp;|&nbsp;&nbsp; 065/555 55 55</p>
+        <button class="menu-btn" onclick="toggleMenu()">
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+        </button>
+      </div>
+      <!-----------         MENU            ----------->
+      <div id="menu" style="height: 0px">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#hero">Home</a></li>
+          <li class="menu-item"><a href="#about">About us</a></li>
+          <li class="menu-item">
+            Services
+            <div class="arrow bottom" onclick="toggleSubmenu()"></div>
+            <ul class="submenu-hidden">
+              <li><a href="#service1">Service 1</a></li>
+              <li><a href="#service2">Service 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-----------         HERO            ----------->
+      <div id="hero">
+        <img src="./Assets/logo.png" />
+        <p>SAFE PARTNER FOR YOUR BUSINESS</p>
+        <nav>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </nav>
+      </div>
+      <p>STEP INTO THE WORLD OF OPPORTUNITIES</p>
+    </header>
+    <main>
+      <!-----------         ABOUT US            ----------->
+      <section id="about">
+        <article class="dark about-card">
+          <h2 class="h2-dark">About Us</h2>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            facilis culpa dignissimos incidunt provident quia?
+          </h5>
+          <hr />
+        </article>
+        <article class="light about-card">
+          <h5>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            officia odio unde obcaecati error numquam possimus quaerat, impedit
+            neque fugit!
+          </h5>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+            minus velit iure, doloremque accusantium inventore sint am, libero
+            temporibus rerum dicta sit vero consectetur quidem at quo culpa
+            nulla totam iusto ab numquam repellendus maiores veritatis? Facilis
+            repellendus perferendis repellat tempore modi, corrupti eveniet
+            beatae dolorum ut nihil quibusdam sit ea quidem architecto
+            perspiciatis? ipsum officia libero similique quia! Tempore omnis
+            consequuntur voluptate inventore assumenda nisi quidem debitis!
+            Cupiditate, modi necessitatibus natus consequatur nihil adipisci
+            fugiat reiciendis suscipit quia iusto rem veniam quam quasi qui
+            voluptates magni? Eos ipsum iusto id sint commodi et delectus dolor,
+            sequi aperiam, harum facere perferendis repudiandae!
+          </p>
+          <button class="btn-more">Read more <span>&#8594;</span></button>
+        </article>
+      </section>
+      <!-----------         SERVICES            ----------->
+      <section class="services container" id="service1">
+        <article
+          class="service-card"
+          style="
+            background-image: linear-gradient(
+                360deg,
+                rgba(46, 168, 220, 0.918) 2%,
+                rgba(187, 187, 207, 0.014) 45% 100%
+              ),
+              url(/Assets/servis-1.png);
+          "
+        >
+          <div class="card-label">
+            <p>1</p>
+          </div>
+          <p>Service1</p>
+        </article>
+        <article
+          class="service-card"
+          style="
+            background-image: linear-gradient(
+                360deg,
+                rgba(46, 168, 220, 0.918) 2%,
+                rgba(187, 187, 207, 0.014) 45% 100%
+              ),
+              url(./Assets/servis-2.png);
+          "
+        >
+          <div class="card-label">
+            <p>2</p>
+          </div>
+          <p>Service2</p>
+        </article>
+        <article
+          class="service-card"
+          style="
+            background-image: linear-gradient(
+                360deg,
+                rgba(46, 168, 220, 0.918) 2%,
+                rgba(187, 187, 207, 0.014) 45% 100%
+              ),
+              url(./Assets/servis-3.png);
+          "
+        >
+          <div class="card-label">
+            <p>3</p>
+          </div>
+          <p>Service3</p>
+        </article>
+      </section>
+      <!-----------         OUR TEAM            ----------->
+      <section class="our-team">
+        <article class="dark our-team-card">
+          <h2 class="h2-dark">Our Team</h2>
+          <p style="color: whitesmoke">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, optio?
+            Earum totam repudiandae quis. Incidunt totam eos inventore deserunt
+            cum odio autem quo saepe aliquam distinctio, officiis placeat?
+            Debitis in dolores est? Distinctio est libero vitae cum quaerat unde
+            dolorum!
+          </p>
+          <button class="btn-more">Read more <span>&rarr;</span></button>
+        </article>
+        <article class="our-team-card">
+          <img src="./Assets/nas-tim.png" />
+        </article>
+      </section>
+      <!-----------         BLOG            ----------->
+      <section class="container">
+        <h2>Blog</h2>
+        <div class="blog-container">
+          <img src="./Assets/blog-1.png" />
+          <div class="blog-desc">
+            <h5>Blog post title 1</h5>
+            <p>12.03.2019</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum,
+              eum quis, facere numquam accusantium dolor fugit voluptatibus
+              reiciendis adipisci est necessitatibus nisi sit eveniet facilis
+              nesciunt doloribus qui totam? Ea? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Rerum, accusamus in eius modi
+              praesentium, sunt, ut ullam cum optio ab rem. Fuga impedit neque
+              inventore harum porro repellat omnis nihil!
+            </p>
+            <button class="btn-transparent">Read more &rarr;</button>
+          </div>
+        </div>
+        <hr />
+        <article class="blog-container">
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="./Assets/blog-2.png" style="width: 100%" />
+              <div class="overlay">
+                <h6 style="color: whitesmoke">Blog post title 2</h6>
+              </div>
+            </div>
+            <h6>Blog post title 2</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus porro deserunt ea dolores molestiae unde rerum alias
+              nostrum inventore ab! Quo qui nobis ducimus delectus quibusdam
+              dolorum est at culpa?
+            </p>
+            <button class="btn-transparent">Read more &rarr;</button>
+          </div>
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="./Assets/blog-3.png" style="width: 100%" />
+              <div class="overlay">
+                <h6 style="color: whitesmoke">Blog post title 3</h6>
+              </div>
+            </div>
+            <h6>Blog post title 3</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus porro deserunt ea dolores molestiae unde rerum alias
+              nostrum inventore ab! Quo qui nobis ducimus delectus quibusdam
+              dolorum est at culpa?
+            </p>
+            <button class="btn-transparent">Read more &rarr;</button>
+          </div>
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="./Assets/blog-4.png" style="width: 100%" />
+              <div class="overlay">
+                <h6 style="color: whitesmoke">Blog post title 4</h6>
+              </div>
+            </div>
+            <h6>Blog post title 4</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus porro deserunt ea dolores molestiae unde rerum alias
+              nostrum inventore ab! Quo qui nobis ducimus delectus quibusdam
+              dolorum est at culpa?
+            </p>
+            <button class="btn-transparent">Read more &rarr;</button>
+          </div>
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="./Assets/blog-5.png" style="width: 100%" />
+              <div class="overlay">
+                <h6 style="color: whitesmoke">
+                  Blog post title 5 is longer than other titles
+                </h6>
+              </div>
+            </div>
+            <h6>Blog post title 5 is longer than other titles</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus porro deserunt ea dolores molestiae unde rerum alias
+              nostrum inventore ab! Quo qui nobis ducimus delectus quibusdam
+              dolorum est at culpa?
+            </p>
+            <button class="btn-transparent">Read more &rarr;</button>
+          </div>
+        </article>
+      </section>
+      <!-----------         WHY US            ----------->
+      <section class="container" id="why-us">
+        <h2>Why Us</h2>
+        <p style="padding: 0% 10%">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi
+          odit veritatis distinctio nemo autem adipisci, minus deserunt.
+          Delectus beatae debitis, laudantium cumque sapiente nam possimus
+          impedit alias, minima illo numquam ex ipsum incidunt deleniti
+          accusantium ea asperiores illum commodi rerum molestias! Fugiat
+          quisquam quis atque reiciendis. Impedit autem tenetur accusamus ex
+          nulla, nemo numquam consequatur facilis reprehenderit ratione culpa
+          vero deleniti qui fugit iusto sint, sapiente magnam excepturi. Dolorum
+          modi quasi praesentium excepturi deleniti.
+          <!-- <article id="why-us-img"></article> -->
+        </p>
+      </section>
+      <!-----------         SERVICES            ----------->
+      <section class="container services" id="service2">
+        <div class="service-item">
+          <h1>Desktop</h1>
+          <img src="./Assets/desktop-icon.png" alt="" />
+          <p>Desktop</p>
+        </div>
+        <div class="service-item">
+          <h1>Tablet</h1>
+          <img src="./Assets/tablet-icon.png" alt="" />
+          <p>Tablet</p>
+        </div>
+        <div class="service-item">
+          <h1>Smartphone</h1>
+          <img src="./Assets/smartphone-icon.png" alt="" />
+          <p>Smartphone</p>
+        </div>
+      </section>
+      <section class="container poster">
+        <img src="./Assets/logo-small.png" alt="" />
+        <p>Don't stop until it's perfect.</p>
+      </section>
+      <!-----------         CONTACT            ----------->
+      <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div>
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="form-input"
+            /><br />
+            <label for="lastname">Lastname</label><br />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Lastname"
+              class="form-input"
+            /><br />
+            <label for="email">Email address</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              class="form-input"
+            /><br />
+          </div>
+          <div>
+            <label for="message">Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              rows="6"
+              cols="20"
+              placeholder="Message"
+              class="form-input"
+            ></textarea>
+            <button type="submit" class="btn-more">
+              Send message <span>&rarr;</span>
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-----------         FOOTER            ----------->
+      <footer>
+        <button class="btn-top" onclick="scrollToTop()">
+          <article class="arrow top"></article>
+        </button>
+        <div class="info footer-info">
+          <p>
+            <a>info@emailadress.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a>065/555 55 55</a>
+          </p>
+          <p><a>Facebook</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a>Instagram</a></p>
+        </div>
+        <nav>
+          <p><a href="#hero">Home</a></p>
+          <p><a href="#about">About Us</a></p>
+          <p><a href="#service1">Services</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </nav>
+        <div>
+          <p style="margin-top: 5%; color: grey">
+            Copyright Test Mad Duck Code 2019. All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
